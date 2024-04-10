@@ -17,8 +17,8 @@ import torchvision.transforms as transforms
 class ImageNetDataset(Dataset):
     def __init__(self,
                  args,
-                 image_dir='C:/Users/14736/work_study/dataset/imagenet/archive/',
-                 label2index_file='C:/Users/14736/work_study/dataset/imagenet/archive/Labels.json',
+                 image_dir='C:/Users/dataset/imagenet/archive/',
+                 label2index_file='C:/Users/dataset/imagenet/archive/Labels.json',
                  split='train'):
         super(ImageNetDataset).__init__()
         self.args = args
@@ -123,8 +123,7 @@ class TinyImageNetDataset(Dataset):
 class CIFAR10Dataset(Dataset):
     def __init__(self,
                  args,
-                 image_dir='C:/Users/14736/work_study/dataset/cifar10_png/cifar10/',
-                 # image_dir='C:/Users/14736/work_study/new_dataset_for_test_2/cifar10/resnet18/origin_cw_fgsm_bim/',
+                 image_dir='C:/Users/dataset/cifar10_png/cifar10/',
                  split='train'):
         super(CIFAR10Dataset).__init__()
         self.args = args
@@ -159,7 +158,7 @@ class CIFAR10Dataset(Dataset):
 class MNISTDataset(Dataset):
     def __init__(self,
                  args,
-                 image_dir='C:/Users/14736/work_study/dataset/Mnist_png/mnist_png/',
+                 image_dir='C:/Users/dataset/Mnist_png/mnist_png/',
                  split='train'):
         super(MNISTDataset).__init__()
         self.args = args
