@@ -251,7 +251,6 @@ if __name__ == '__main__':
         plt.close(fig)
 
     # for i, (image, label, prefix) in enumerate(tqdm(test_loader)):
-    #     # 选择攻击方式（fgsm, bim, pgd, cw）
     #     adversarial_image = cw(image, label)
     #
     #     adversarial_image.requires_grad = True
